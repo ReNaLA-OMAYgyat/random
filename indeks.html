@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Navbar</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome (Untuk Icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+
+        <!-- Tombol Toggle (Mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Navbar -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+
+          <!-- Tombol Mode Gelap -->
+          <div class="ms-3">
+            <i class="fas fa-moon fa-lg theme-toggle" id="themeToggle"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contoh Konten -->
+    <header id="hero" class="hero py-5">
+      <div class="container text-center">
+        <h1 class="title">Selamat Datang di <span id="typed-text"></span></h1>
+        <p class="subtitle">
+          Saya seorang <span class="highlight">Web Developer & Designer</span>
+        </p>
+      </div>
+    </header>
+
+    <!-- Foto Profil Start -->
+    <section class="profile-section text-center py-5">
+      <div class="container-fluid">
+        <img
+        src="https://i.pinimg.com/736x/1b/88/92/1b8892d1ee65e258a2ce7804f52c5f9a.jpg"
+        alt="Foto Profil" class="profile-photo mb-3" />
+        <h1 class="mt-3">Fatan Nur Rizqi</h1>
+        <p>Seorang Web Developer Yang berfokus pada desain</p>
+      </div>
+    </section>
+    <!-- Foto Profil End -->
+
+    <!--bar progres-->
+    <section id="skills" class="container-fluid text-center py-5">
+      <h2 class="mt-5">Keahlian Saya</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p>HTML & CSS</p>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar rainbow-bar"
+              style="width: 90%"
+              data-value="35%"
+            >
+              35%
+            </div>
+          </div>
+          <p>JavaScript</p>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar rainbow-bar"
+              style="width: 80%"
+              data-value="20%"
+            >
+              20%
+            </div>
+          </div>
+          <p>Bootstrap</p>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar rainbow-bar"
+              style="width: 85%"
+              data-value="50%"
+            >
+              50%
+            </div>
+          </div>
+          <p>ChatGPT</p>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar rainbow-bar"
+              style="width: 85%"
+              data-value="100%"
+            >
+              100%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--bar progres end-->
+    <!-- Tentang Saya -->
+    <section id="about" class="about container text-center py-5">
+      <h2 class="mb-4">Tentang Saya</h2>
+      <img src="ryo3.png" alt="Profil Saya" class="img-fluid rounded-circle profile-image mb-4">
+      <p>Saya adalah seorang web developer pemula yang sedang mengembangkan skil di bagian front-end,
+        berikut lebih lengkapnya
+      </p>
+    </section>
+ <!-- Grid Info Tentang -->
+ <div class="row mt-5">
+    <div class="col-lg-4 col-md-6 mb-4 about-card">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Pendidikan</h5>
+                <p class="card-text">Saya sekarang sedang bersekolah pada smk yadika soreang.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4 about-card">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Keahlian</h5>
+                <p class="card-text">Menguasai HTML, CSS, JavaScript, dan Bootstrap.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4 about-card">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Pengalaman</h5>
+                <p class="card-text">Tidak Ada..</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Ikon untuk Keahlian -->
+<section id="skills" class="container text-center py-5">
+    <h2 class="mb-4">Keahlian Saya</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+            <i class="fas fa-html5 fa-4x mb-3"></i>
+            <p>HTML</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <i class="fas fa-css3-alt fa-4x mb-3"></i>
+            <p>CSS</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <i class="fab fa-js-square fa-4x mb-3"></i>
+            <p>JavaScript</p>
+        </div>
+    </div>
+</section>
+<!-- Proyek Saya -->
+<section id="projects" class="projects container text-center py-5">
+    <h2 class="mb-4">Proyek Saya</h2>
+    <div class="parallax-background"><img src="ryo5.png" alt=""></div> <!-- Latar belakang Parallax -->
+    
+    <div class="row">
+        <!-- Proyek 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card project-card h-100">
+                <img src="1296283.png" alt="Proyek 1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Proyek Web A</h5>
+                    <p class="card-text">Deskripsi singkat proyek web yang saya buat, termasuk teknologi yang digunakan.</p>
+                    <a href="#" class="btn btn-primary">Lihat Proyek</a>
+                </div>
+            </div>
+        </div>
+        <!-- Proyek 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card project-card h-100">
+                <img src="ryo4.png" alt="Proyek 2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Proyek Web B</h5>
+                    <p class="card-text">Deskripsi singkat proyek web yang saya buat, termasuk teknologi yang digunakan.</p>
+                    <a href="#" class="btn btn-primary">Lihat Proyek</a>
+                </div>
+            </div>
+        </div>
+        <!-- Proyek 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card project-card h-100">
+                <img src="ryo5.png" alt="Proyek 3" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Proyek Web C</h5>
+                    <p class="card-text">Deskripsi singkat proyek web yang saya buat, termasuk teknologi yang digunakan.</p>
+                    <a href="#" class="btn btn-primary">Lihat Proyek</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Tambahkan Ikon Sosial Media -->
+  <footer class="text-center py-4">
+    <div class="social-icons">
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <p class="mt-3">© 2023 Fatan Nur Rizqi. All rights reserved.</p>
+  </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sekrip.js"></script>
+    <div class="floating-element floating-2">
+      <img src="ryo2.png" alt="" />
+    </div>
+  </body>
+</html>
+
